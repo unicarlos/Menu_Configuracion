@@ -1,2 +1,38 @@
-
 Noviembre 2012
+
+La imagen nos muestra el montaje a realizar.
+
+Abrimos con Arduino LCD_I2C_Pulsador_Menu_ino (Programa Principal)
+
+Observar las pestañas (en este caso hay dos).
+
+Dentro de ellas hay funciones usadas en el programa principal.
+
+De esta forma organizamos el código de manera más eficaz.
+
+FUNCIONAMIENTO.
+
+Tras cargar el programa en el Arduino, podremos observar en la pantalla LCD:
+- Funcionando (Si el conmutador esta en una posición).
+- Sistema Detenido (Conmutador en el centro).
+- Configuracion (Conmutado en el otro lado)
+  * Esta última, no se verá en pantalla, ya que de manera muy rápida entramos en la opción de introducir datos.
+    *En este caso nos pide:  (en 2 líneas de la LCD)
+        0.- Humedad Inicial 0
+        1.- Humedad Final  0
+        2.- Temperatura Inicial 0
+        3.- Temperatura Final 0
+        4.- Numero Dias Incubación 0
+
+Para desplazarnos por estos menús hay que pulsar y soltar el pulsador conectado al pin 8 (Pulsador de la izquierda)
+
+Para incrementar la temperatura pulsaremos:
+  - Pulsador central. Incrementa de uno en uno el valor.
+  - Pulsador derecho. Incrementa el valor de diez en diez.
+Ambos pulsadores, mientras se mantenga pulsados, irán incrementando el valor rápidamente.
+
+
+Cuando tengamos configurados nuestros parámetros cambiaremos el CONMUTADOR a la posición de FUNCIONAMIENTO.
+En nuestro caso no hace nada. TENDRÉIS QUE IMPLEMENTARLO para vuestra aplicación.
+
+
